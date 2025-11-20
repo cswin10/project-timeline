@@ -36,15 +36,15 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 lg:py-32">
         {/* Blueprint Grid Background */}
-        <div className="absolute inset-0 blueprint-grid opacity-10" />
+        <div className="absolute inset-0 blueprint-grid opacity-10 pointer-events-none" />
 
         {/* Decorative Lines */}
-        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-architectural-blue to-transparent opacity-50" />
-        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-architectural-blue to-transparent opacity-50" />
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-architectural-blue to-transparent opacity-50 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-architectural-blue to-transparent opacity-50 pointer-events-none" />
 
         <Container>
           <motion.div
-            className="text-center max-w-4xl mx-auto"
+            className="text-center max-w-4xl mx-auto relative z-10"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -173,7 +173,7 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="py-20 bg-architectural-charcoal text-white relative overflow-hidden">
-        <div className="absolute inset-0 blueprint-grid opacity-5" />
+        <div className="absolute inset-0 blueprint-grid opacity-5 pointer-events-none" />
         <Container>
           <motion.div
             className="text-center max-w-3xl mx-auto relative z-10"
