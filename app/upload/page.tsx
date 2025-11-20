@@ -71,13 +71,22 @@ export default function UploadPage() {
       const fileUrl = await uploadFile(file);
       setCurrentStage(1);
 
+      // Load custom business rules if available
+      let businessRules = undefined;
+      if (typeof window !== 'undefined') {
+        const customRules = localStorage.getItem('customBusinessRules');
+        if (customRules) {
+          businessRules = JSON.parse(customRules);
+        }
+      }
+
       // Stage 2-4: Call API to analyze
       const response = await fetch('/api/analyse', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ fileUrl }),
+        body: JSON.stringify({ fileUrl, businessRules }),
       });
 
       if (!response.ok) {
