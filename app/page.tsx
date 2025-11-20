@@ -72,13 +72,17 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/upload" className="inline-block">
-                <Button size="lg">Try It Now</Button>
+              <Link
+                href="/upload"
+                className="inline-block px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-200 bg-architectural-blue text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-center"
+              >
+                Try It Now
               </Link>
-              <a href="#features" className="inline-block">
-                <Button variant="outline" size="lg">
-                  Learn More
-                </Button>
+              <a
+                href="#features"
+                className="inline-block px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-200 border-2 border-architectural-blue text-architectural-blue hover:bg-architectural-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-center"
+              >
+                Learn More
               </a>
             </div>
           </motion.div>
@@ -182,10 +186,11 @@ export default function HomePage() {
             <p className="text-xl text-gray-300 mb-8">
               Upload your first architectural drawing and see the power of AI project planning.
             </p>
-            <Link href="/upload">
-              <Button size="lg" className="bg-white text-architectural-charcoal hover:bg-gray-100">
-                Start Free Trial
-              </Button>
+            <Link
+              href="/upload"
+              className="inline-block px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-200 bg-white text-architectural-charcoal hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 text-center"
+            >
+              Start Free Trial
             </Link>
           </motion.div>
         </Container>
