@@ -72,19 +72,21 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/upload">
+              <Link href="/upload" className="inline-block">
                 <Button size="lg">Try It Now</Button>
               </Link>
-              <Button variant="outline" size="lg">
-                Learn More
-              </Button>
+              <a href="#features" className="inline-block">
+                <Button variant="outline" size="lg">
+                  Learn More
+                </Button>
+              </a>
             </div>
           </motion.div>
         </Container>
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white">
+      <section id="features" className="py-20 bg-white">
         <Container>
           <motion.div
             className="text-center mb-16"
