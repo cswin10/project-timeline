@@ -44,7 +44,7 @@ export default function AdminSettingsPage() {
         <Card className="mb-6">
           <h2 className="text-2xl font-semibold mb-4">Phase Duration Ranges (Days)</h2>
           <p className="text-architectural-lightGrey mb-6">
-            Set typical min/max durations based on your company's work rate
+            Set typical min/max durations based on your company&apos;s work rate
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
